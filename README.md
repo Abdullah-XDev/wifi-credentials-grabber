@@ -50,8 +50,8 @@ git clone https://github.com/Abdullah-XDev/wifi-credentials-grabber.git
 cpp
 #define OLED_SDA 8
 #define OLED_SCL 9
-	5	Upload the code to your ESP32-S3
-Usage
+##	5	Upload the code to your ESP32-S3
+## Usage
 	1	Power up the ESP32-S3
 	2	Connect to the "XDev" WiFi network (password: 12345678)
 	3	Open browser and navigate to 192.168.4.1
@@ -59,42 +59,42 @@ Usage
 	5	Click "Start EvilTwin" to create a fake AP
 	6	Victims connecting to the fake AP will see a password prompt
 	7	Captured passwords appear on both OLED display and web interface
-OLED Display Information
-The OLED screen shows:
+## OLED Display Information
+## The OLED screen shows:
 	•	Selected AP: Currently targeted network
 	•	Last Password: Most recently captured password
 	•	Last Connected: SSID of the last successful authentication
-Web Interface Features
+## Web Interface Features
 	•	List of available WiFi networks
 	•	Select target network button
 	•	Start/Stop Evil Twin toggle
 	•	Real-time captured password display
-Security Notice
-⚠️ IMPORTANT: This tool is for educational purposes and authorized security testing only. Unauthorized use against networks you don't own or have permission to test is illegal.
-How It Works
+## Security Notice
+## ⚠️ IMPORTANT: This tool is for educational purposes and authorized security testing only. Unauthorized use against networks you don't own or have permission to test is illegal.
+## How It Works
 	1	Network Scanning: Device scans for nearby WiFi networks
 	2	Evil Twin Creation: Creates a fake AP with selected SSID
 	3	Captive Portal: Redirects victims to fake authentication page
 	4	Credential Capture: Saves entered passwords
 	5	Verification: Attempts to verify credentials with real network
 	6	Display Update: Shows captured data on OLED screen
-Troubleshooting
-OLED not working:
+## Troubleshooting
+## OLED not working:
 	•	Check I2C connections
 	•	Verify correct pins (SDA=8, SCL=9)
 	•	Try different I2C addresses
-Can't connect to “XDev”:
+## Can't connect to “XDev”:
 	•	Ensure ESP32 is powered
 	•	Check serial output for debug messages
 	•	Reset the device
-No networks showing:
+## No networks showing:
 	•	Ensure WiFi antenna is connected
 	•	Move closer to WiFi sources
 	•	Check serial monitor for scan results
 
-Disclaimer
+## Disclaimer
 This software is provided for educational purposes only. The author is not responsible for any misuse or damage caused by this program. Always obtain proper authorization before testing networks.
-Author
+## Author
 Abdullah-XDev
-Version
+## Version
 1.0.0
