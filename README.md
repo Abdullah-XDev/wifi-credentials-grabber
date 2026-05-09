@@ -41,7 +41,7 @@ A captive portal phishing tool for ESP32-S3 with SH1106 OLED display that mimics
 1. Clone this repository:
 ```bash
 git clone https://github.com/Abdullah-XDev/wifi-credentials-grabber.git
-
+```
 	2	Install required libraries in Arduino IDE:
 	◦	Sketch → Include Library → Manage Libraries
 	◦	Search and install "U8g2" by Oliver
